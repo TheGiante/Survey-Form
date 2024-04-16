@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Orcaa Registration</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Orcaa Registration Form</h1>
+    <p id="description">Welcome to the Orcaa platform.The future of AI schooling.</p>
+    <form action="" id="survey-form" action="">
+        <fieldset>
+          <label for="name">Enter Your Name:<input id="name" type="text" placeholder="Name" required/></label>
+          <label for="email">Enter Your Email:<input id="email" type="email" placeholder="Email" required/>
+          <label for="number">Enter Your Number:<input id="number" type="number" min="10" max="10" placeholder="Number" required/></label>
+        </fieldset>
+        <fieldset>
+            <legend>Where did you hear about us?</legend>
+            <select id="dropdown">
+              <option>select one</option>
+              <option>Facebook</option>
+              <option>Instagram</option>
+              <option>Viber</option>
+              <option>VK</option>
+              <option>other</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Which option best describes your current role?</legend>
+            <label for="option1"><input class="inline" type="radio"  value="option1" name="role" required/>Student</label>
+            <label for="option2"><input class="inline"  type="radio" value="option2" name="role" required/>Graduate</label>
+            <label for="option3"><input class="inline"  type="radio" value="option3" name="role" required/>Employed</label>
+            <label for="option4"><input class="inline"  type="radio" value="option4" name="role" required/>Unemployed</label>
+        </fieldset>
+        <fieldset>
+            <legend>Which course are you interested in?</legend>
+            <label><input class="inline" type="checkbox" name="software" required checked/>Software Developer course</label>
+            <label><input class="inline" type="checkbox" name="business" required/>Business Analyst course</label>
+            <label><input class="inline" type="checkbox" name="network" required/>Network Administrator course</label>
+            <label><input class="inline" type="checkbox" name="data" required/>Data Analyst course</label>
+            <label><input class="inline" type="checkbox" name="ui/ux" required/>UI/UX Developer course</label>
+        </fieldset>
+        <label for="choosen-course">Let us know why you want to study the choosen course.
+            <textarea id="choosen-course"name="choosen-course" rows="5" cols="30" placeholder="I choose [course name] because ..."></textarea>
+        </label>
+        <input type="submit" value="submit">
+    </form>
+  </body>
+</html>
